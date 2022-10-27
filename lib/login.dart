@@ -12,7 +12,7 @@ class _MyLoginState extends State<MyLogin> {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/images/login.png'),fit: BoxFit.cover
+          image: AssetImage('assets/images/login3.png'),fit: BoxFit.cover
         )
       ),
       child: Scaffold(
@@ -22,7 +22,7 @@ class _MyLoginState extends State<MyLogin> {
             Container(
               padding: EdgeInsets.only(top: 130,left: 100,right: 100),
               child:  Text('TECH-TUTOR',style: TextStyle(
-                color: Colors.white,
+                color: Colors.grey.shade300,
                 fontSize: 33,
 
               ),
@@ -69,7 +69,7 @@ class _MyLoginState extends State<MyLogin> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text('Login',style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.grey.shade300,
                           fontSize: 27,
                           fontWeight: FontWeight.w700,
                         ),
@@ -79,7 +79,7 @@ class _MyLoginState extends State<MyLogin> {
                           backgroundColor: Color(0xff4c505b),
                           child: IconButton(
                             onPressed:(){} ,
-                            icon: Icon(Icons.arrow_forward),
+                            icon: Icon(Icons.arrow_forward,color: Colors.grey.shade400,),
                           ),
                         )
                       ],
@@ -93,14 +93,14 @@ class _MyLoginState extends State<MyLogin> {
                         TextButton(onPressed:(){} , child: Text('Sign Up',style: TextStyle(
                           decoration: TextDecoration.underline,
                           fontSize: 18,
-                          color: Colors.white,
+                          color: Colors.grey.shade300,
                         ),
                         )
                         ),
                         TextButton(onPressed:(){} , child: Text('Forgot Password',style: TextStyle(
                             decoration: TextDecoration.underline,
                             fontSize: 18,
-                            color: Colors.white,
+                            color: Colors.grey.shade300,
                         ),))
                       ],
 
@@ -116,6 +116,8 @@ class _MyLoginState extends State<MyLogin> {
     );
   }
 }
+
+    
 
     
 
